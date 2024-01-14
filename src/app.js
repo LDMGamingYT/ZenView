@@ -1,15 +1,13 @@
 // Copyright (c) 2024 Logan Dhillon
 
+const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
 function updateTime() {
 	var currentTime = new Date();
 
-	var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-	var dayOfWeek = daysOfWeek[currentTime.getDay()];
 	var month = currentTime.toLocaleString('en-us', { month: 'long' });
-	var dayOfMonth = currentTime.getDate();
-	var year = currentTime.getFullYear();
 
-	document.getElementById('date').textContent = `${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`;
+	document.getElementById('date').textContent = `${daysOfWeek[currentTime.getDay()]}, ${month} ${currentTime.getDate()}, ${currentTime.getFullYear()}`;
 
 	document.getElementById('seconds').textContent = ('0' + currentTime.getSeconds()).slice(-2);
 	document.getElementById('minutes').textContent = ('0' + currentTime.getMinutes()).slice(-2);
