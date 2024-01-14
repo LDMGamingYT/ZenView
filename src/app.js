@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Logan Dhillo
+// Copyright (c) 2024 Logan Dhillon
 
 function updateTime() {
 	var currentTime = new Date();
