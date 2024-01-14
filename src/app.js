@@ -2,8 +2,8 @@
 
 function updateTime() {
 	var currentTime = new Date();
-	document.getElementById('seconds').textContent = currentTime.getSeconds();
-	document.getElementById('minutes').textContent = currentTime.getMinutes();
+	document.getElementById('seconds').textContent = ('0' + currentTime.getSeconds()).slice(-2);
+	document.getElementById('minutes').textContent = ('0' + currentTime.getMinutes()).slice(-2);
 	document.getElementById('hours').textContent = currentTime.getHours();
 }
 
