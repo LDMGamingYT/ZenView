@@ -2,6 +2,8 @@
 
 Easily view widgets at a glace during standby.
 
+Try it out at https://logandhillon.github.io/ZenView/
+
 ## Widgets
 
 - Clock
