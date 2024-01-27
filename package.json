@@ -1,4 +1,9 @@
 {
+  "license": "GPL-3.0-only",
+  "author": {
+    "name": "Logan Dhillon",
+    "email": "logandhi64@gmail.com"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   }
