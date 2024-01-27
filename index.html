@@ -1,0 +1,25 @@
+<!-- Copyright (c) 2024 Logan Dhillon -->
+<!-- Redirect user to /src/ so they see the webpage and not the README -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Loading ZenView...</title>
+	<script>
+		window.location.assign("/src/")
+	</script>
+	<link rel="shortcut icon" href="/resources/favicon.png" type="image/x-icon">
+	<link href="/dist/output.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5a740087a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+	<section class="container mx-auto p-5 text-center mt-32 mb-24">
+		<h1 class="text-4xl font-semibold">Loading...</h1>
+		<p class="mt-2">Your requested content is loading.<br>You will be automatically redirected once this completes.</p>
+		<i class="fa-solid fa-hourglass-start fa-spin text-9xl mt-24 text-fuchsia-500"></i>
+	</section>
+</body>
+
+</html>
