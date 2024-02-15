@@ -15,6 +15,7 @@ function updateTime() {
 }
 
 addEventListener("DOMContentLoaded", function() {
-	// Update time every 500 ms: 500 ms allows it to correct itself if the cycle is not synced with the clock
-	setInterval(updateTime, 500);
+	// update time every ms, since this isnt that heavy of a load.
+	// needs testing, revert or slow down if it's too intensive.
+	setInterval(updateTime, 1);
 });
