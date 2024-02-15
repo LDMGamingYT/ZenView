@@ -29,4 +29,10 @@ addEventListener("DOMContentLoaded", function() {
 	// mins and secs are updated more frequently sicne they change more often
 	setInterval(updateMinutes, 500);
 	setInterval(updateSeconds, 100);
+
+	// load quote from url params
+	const urlParams = new URLSearchParams(window.location.search);
+	if (urlParams.has("quote")) {
+		this.document.getElementById("quote").innerText = '"' + urlParams.get("quote") + '"';
+	}
 });
